@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+/* Header */
+.img-banner{
+    width: 100%;
+}
+
+/*Navigation Bar*/
+.nav-bar{   
+    background: black;
+    width: 100%;
+    height: 55px;
+    font-size: 1.25rem;
+    overflow: hidden;
+    transition: height .5s ease-in-out;  
+    margin-top: -5px;
+}
+
+.nav-bar, .nav-bar-menu{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .nav-bar, .nav-bar-menu {
+    color: #fff;
+    text-decoration: none; 
+    line-height: 55px;
+    padding: 0 5rem;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .nav-bar-menu{
+    font-size: 1rem;
+  }
+
+  .nav-bar-menu .navlinks {
+    text-decoration: none;
+  }
+  a {
+    color: rgb(223, 215, 215);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  a:link{
+      text-decoration: underline;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: black;
+  }
+
+/*Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+      "Main-Menu Gallery Gallery"
+      "Block Subs Sub-Form";
+      width: 1000px;
+  }
+  .Main-Menu { 
+      grid-area: Main-Menu;
+    }
+
+  .Main-menu, .cartype{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;      
+  }
+
+
+
+  .Main-menu, a{
+    color: white(139, 8, 8);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    margin-right: -1px;
+  }
+  .Gallery { 
+    background-image: url("https://www.carmastergarage.ae/images/blackbanner1.gif");
+    grid-area: Gallery;
+    color: white;
+    width: 950px;
+    padding-left: 50px;
+    padding-top: 200px;
+    font-weight: bolder;
+    font-size: 20px;
+    
+  }
+  .Block { grid-area: Block;
+    color: white;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;;
+    margin: -1px;
+}
+
+.minititle{
+    align-self: flex-start;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+  .Subs { grid-area: Subs; 
+    color: white;
+    width: 650px;
+    margin: -1px;
+}
+  .Sub-Form { 
+      grid-area: Sub-Form;
+      width: 450px;
+      color: white;
+      padding-top: 50px;
+      padding-left: 20px;
+      border: 1px solid grey;
+    margin: -1px;
+    }
+    input{
+        background-color:black;
+        color:white;
+    }
+    textarea{
+        background-color:black;
+        color:white;
+    }
+.button{
+    width: 100%;
+}
+
+    button{
+  width: 30%; 
+  margin-left: 0px;
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: black;
+  color: white;
+    }
+
+    button:hover{
+        background-color: rgb(173, 162, 162);
+    }
+
+    /* footer and social links */
+
+    footer{
+        width: 100%;
+        padding-left: 550px;
+        height: 50px;
+    }
+
+    .fa-facebook {
+        background: black;
+        color: white;
+      }
+      .fa-twitter {
+        background: black;
+        color: white;
+      }
+      .fa-youtube {
+        background: black;
+        color: white;
+      }
+      
+      .fa-instagram {
+        background: black;
+        color: white;
+      }
+      
+      .fa-pinterest {
+        background: black;
+        color: white;
+      }
+
+      .fa:hover{
+      font-size: 20px;
+      }
+
+
+  
+  
